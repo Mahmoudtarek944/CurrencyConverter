@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.main {
+  min-height: 100vh;
+  background-image: linear-gradient(to left, gray, black);
+}
+.nav-img {
+  width: 8%;
+}
+.content {
+  background-image: linear-gradient(to top, rgb(0, 122, 122), black);
+}
+
+.inpt::placeholder {
+  color: rgb(185, 184, 184);
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.inpt:focus {
+  border: 0px;
+  outline: 0px;
+}
+hr {
+  display: block;
+  border: 0.15em solid rgb(43, 87, 164);
+  margin-top: -0.1em;
+}
+.btnConvert {
+  background-color: rgb(59, 59, 59);
+  transition: 0.15s;
+}
+.btnConvert:hover {
+  background-color: gray;
+}
+.flagFirst,
+.flagSec {
+  top: 10% !important;
+  right: 3em !important;
+}
+@media screen and (max-width: 470px) {
+  .content {
+    padding: 1.5em 0.5em !important;
+    width: 90% !important;
+  }
+  .nav {
+    flex-direction: column !important;
+    gap: 1em !important;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-img {
+    width: 3em;
+  }
+  .flagAndCountyFirst,
+  .flagAndCountySec {
+    width: 100% !important;
+  }
+  .firstSelect,
+  .secSelect {
+    width: 100% !important;
+  }
+}
