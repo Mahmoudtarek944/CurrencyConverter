@@ -193,6 +193,9 @@ btnTransformFlag.addEventListener("click", () => {
   let swap = firstSelect.value;
   firstSelect.value = secSelect.value;
   secSelect.value = swap;
+  let swapImg = flagFirst.src;
+  flagFirst.src = flagSec.src;
+  flagSec.src = swapImg;
 });
 
 // https://v6.exchangerate-api.com/v6/0d7ab351acf602c2ac0b150a/latest/USD

@@ -62,4 +62,9 @@ hr {
   .secSelect {
     width: 100% !important;
   }
+  .flagFirst,
+  .flagSec {
+    top: 5% !important;
+    right: 3em !important;
+  }
 }
